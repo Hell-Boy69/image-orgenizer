@@ -1,0 +1,13 @@
+{
+  "name": "image-organizer",
+  "version": "2.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "^29.4.6",
+    "fs-extra": "^11.3.0",
+    "trash": "^7.2.0"
+  }
+}
