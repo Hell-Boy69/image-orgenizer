@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Image Organizer</title>
+  <style>
+    body { font-family: sans-serif; padding: 20px; }
+    input, button { margin: 5px 0; }
+    img { max-width: 150px; margin: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Local Image Organizer</h1>
+
+  <h3>Upload Images</h3>
+  <input type="text" id="groupName" placeholder="Enter group name"><br>
+  <button id="selectImages">Select Images</button>
+  <ul id="fileList"></ul>
+  <button id="saveImages">Save Images</button>
+
+  <hr>
+
+  <h3>Search Images</h3>
+  <input type="text" id="searchGroup" placeholder="Enter group name"><br>
+  <button id="loadImages">Load Images</button>
+  <div id="imageGallery"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
