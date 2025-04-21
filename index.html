@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IMAGE ORGANIZER</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>IMAGE ORGANIZER</h1>
+      <div id="settings-button">⚙️</div>
+    </header>
+
+    <main>
+      <section class="upload-section">
+        <input type="text" id="upload-name" placeholder="Enter folder name to upload image..." />
+        <button id="upload-btn">Upload Image</button>
+      </section>
+
+      <section class="search-section">
+        <input type="text" id="search-name" placeholder="Enter folder name to search images..." />
+        <button id="search-btn">Search</button>
+      </section>
+
+      <section id="gallery"></section>
+    </main>
+
+    <div id="settings-panel" class="hidden">
+      <label>
+        Theme:
+        <select id="theme-toggle">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </label>
+      <label>
+        Background Image:
+        <input type="file" id="bg-input" accept="image/*" />
+      </label>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#app {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background 0.3s;
+}
+
+[data-theme="light"] {
+  color: #000;
+}
+
+[data-theme="dark"] {
+  color: #eee;
+  background-color: #111;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#settings-button {
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.upload-section, .search-section {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+}
+
+#gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+#settings-panel {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #aaa;
+}
+
+[data-theme="dark"] #settings-panel {
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.hidden {
+  display: none;
+}
+
+.context-menu {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.context-item {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.context-item:hover {
+  background-color: #f0f0f0;
+}

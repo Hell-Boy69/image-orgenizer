@@ -1,0 +1,14 @@
+{
+  "name": "image-organizer",
+  "version": "1.0.0",
+  "description": "An Electron app to organize images into named groups.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Ovi",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0"
+  }
+}
